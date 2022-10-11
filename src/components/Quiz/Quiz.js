@@ -4,7 +4,7 @@ import QuizCard from '../QuizCard/QuizCard';
 
 const Quiz = () => {
     const quizes = useLoaderData();
-    console.log(quizes.data)
+    // console.log(quizes.data)
 
     return (
         <div>
