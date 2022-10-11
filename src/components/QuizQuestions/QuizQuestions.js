@@ -30,7 +30,7 @@ const QuizQuestions = ({ questions }) => {
                         },
                     });
                     return (
-                        <div className="lg:w-2/3 w-full mx-auto overflow-auto">
+                        <div className="lg:w-3/4 w-full mx-auto overflow-auto drop-shadow-md border border-sky-300 mb-8">
                             <div className="w-full">
                                 <div className="bg-blue-100 rounded flex p-4 h-full items-center justify-between">
 
