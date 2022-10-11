@@ -16,7 +16,7 @@ const Quiz = () => {
                         <div className="flex flex-wrap w-full  py-32 px-10 relative mb-4">
                             <img alt="gallery" className="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src={binary} />
                             <div className="text-center relative z-10 w-full">
-                                <h2 className="text-2xl text-gray-900 font-medium title-font mb-2">Ace the Interview</h2>
+                                <h2 className="text-3xl text-gray-900 font-medium title-font mb-2">Ace the Interview</h2>
                                 <p className="leading-relaxed">Take these interactive quizzes now and crack the interview</p>
 
                             </div>
