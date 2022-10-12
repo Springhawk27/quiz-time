@@ -36,7 +36,7 @@ const QuizQuestions = ({ questions }) => {
 
                                     <span className="title-font font-medium">
                                         {question.question.slice(3, -4)}</span>
-                                    <EyeIcon onClick={() => notifyCorrect(correctAns)} className="ml-2 h-6 w-6 text-blue-400"></EyeIcon>
+                                    <EyeIcon onClick={() => notifyCorrect(correctAns)} className="ml-2 h-6 w-6 text-blue-400 cursor-pointer"></EyeIcon>
                                 </div>
 
                             </div>

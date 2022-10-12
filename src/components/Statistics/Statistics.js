@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Label } from 'recharts';
 
 
 
@@ -19,13 +19,19 @@ const Statistics = () => {
         <div className='mt-12 w-4/5 mx-auto'>
             <ResponsiveContainer width="100%" height={500}>
 
-                <BarChart data={quizes.data}>
+                <BarChart data={quizes.data} margin={{ top: 15, right: 30, left: 20, bottom: 30 }}
+                >
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
+                    <XAxis dataKey="name">
+                        <Label value="Total questions in each topic" position="bottom"></Label>
+
+                    </XAxis>
                     <YAxis />
                     <Tooltip />
-                    <Legend />
-                    <Bar dataKey="total" fill="#67E8F9" />
+                    {/* <Legend /> */}
+                    <Legend verticalAlign="insideTop" height={36} />
+
+                    <Bar dataKey="total" fill="#cebdde" />
                 </BarChart>
             </ResponsiveContainer >
 
