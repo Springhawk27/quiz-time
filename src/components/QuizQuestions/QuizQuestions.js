@@ -83,8 +83,7 @@ const QuizQuestions = ({ questions }) => {
                                                     <div >
                                                         <span className="title-font font-medium">{option}</span>
 
-                                                        <Toaster position="top-center"
-                                                            reverseOrder={false} />
+
                                                     </div>
 
                                                 </div>
@@ -98,6 +97,8 @@ const QuizQuestions = ({ questions }) => {
                     )
                 })
             }
+            <Toaster position="top-center"
+                reverseOrder={false} />
         </>
     );
 };
